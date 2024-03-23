@@ -2,7 +2,7 @@
   - `MYSQL_ROOT_PASSWORD` to new value
 
 - HDD volumes for data and run
-  - `/e/mysql_8_0/` to new value
+  - `/e/mysql_8/` to new value
 
 - To build and run (this will start mysql containers in background)
   - `docker-compose -f mysql-8-0-docker-compose.yml up -d`
@@ -11,7 +11,7 @@
   - `docker-compose -f mysql-8-0-docker-compose.yml stop`
 
 - To connect to docker using bash
-  - `docker exec -it mysql_8_0 bash`
+  - `docker exec -it mysql_8 bash`
 
 - To connect using mysql cli
   - From container bash
