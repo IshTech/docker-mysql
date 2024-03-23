@@ -5,10 +5,10 @@
   - `/e/mysql_8/` to new value
 
 - To build and run (this will start mysql containers in background)
-  - `docker-compose -f mysql-8-0-docker-compose.yml up -d`
+  - `docker-compose -f mysql-8-docker-compose.yml up -d`
 
 - To stop it
-  - `docker-compose -f mysql-8-0-docker-compose.yml stop`
+  - `docker-compose -f mysql-8-docker-compose.yml stop`
 
 - To connect to docker using bash
   - `docker exec -it mysql_8 bash`
