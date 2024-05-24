@@ -8,12 +8,17 @@ services:
        - /e/mysql_8/data:/var/lib/mysql
        - /e/mysql_8/run:/var/run/mysqld
        - /e/mysql_8/init_scripts/:/docker-entrypoint-initdb.d/
+      - ./my_utf8mb4.cnf:/etc/mysql/conf.d/my_utf8mb4.cnf
      restart: always
      environment:
        MYSQL_ROOT_USER: root
        # TODO: change the password
        MYSQL_ROOT_PASSWORD: Qwer4321
        MYSQL_PS1: "mysql_8> "
+      LANG: C.UTF-8
        TZ: Europe/Helsinki
      ports:
        - 13306:3306
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
