@@ -19,3 +19,6 @@
   - From local bash
     - `mysql -u MYUSER -pMYPASSWORD -P MYPORT -h 127.0.0.1`
     - `mysql -u root -pQwer4321 -P 13306 -h 127.0.0.1`
+
+- Timezone
+  - `TZ: Atlantic/Reykjavik`
