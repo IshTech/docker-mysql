@@ -6,6 +6,7 @@ services:
       - /e/mysql_8/data:/var/lib/mysql
       - /e/mysql_8/run:/var/run/mysqld
       - /e/mysql_8/init_scripts/:/docker-entrypoint-initdb.d/
+      - /e/mysql_8/custom:/opt/custom
       - ./my_utf8mb4.cnf:/etc/mysql/conf.d/my_utf8mb4.cnf
     restart: always
     environment:
