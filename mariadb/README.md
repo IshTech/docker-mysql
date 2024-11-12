@@ -11,7 +11,7 @@
   - `docker-compose -f mariadb-docker-compose.yml stop`
 
 - To connect to docker using bash
-  - `docker exec -it mariadb_latest bash`
+  - `docker exec -it mariadb_container bash`
 
 - To connect using mysql cli
   - From container bash
