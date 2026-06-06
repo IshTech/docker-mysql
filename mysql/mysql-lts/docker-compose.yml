@@ -1,7 +1,7 @@
 services:
   mysql_lts:
     image: mysql:lts
-    container_name: mysql_lts
+    container_name: mysql_lts_container
     environment:
       MYSQL_ROOT_USER: root
       # TODO: change the password
